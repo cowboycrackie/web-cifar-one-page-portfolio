@@ -286,12 +286,10 @@ p {
 }
 
 #projects .project-img {
-  object-fit: cover;
-  flex-basis: 50%;
+  align-self: stretch;
   height: 300px;
   position: relative;
   overflow: hidden;
-  object-position: center;
 }
 
 /* media queries */
