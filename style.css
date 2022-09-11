@@ -292,6 +292,25 @@ p {
   overflow: hidden;
 }
 
+#projects .project-img::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: var(--card-bg-overlay-color);
+  opacity: 0.7;
+}
+
+#projects .project-item:hover .project-img img{
+  transform: scale(1.1);
+}
+
+#projects .project-img img {
+  transition: 0.5s ease transform;
+}
+
 /* media queries */
 
 /* keyframes */
