@@ -13,6 +13,7 @@
   --hero-bg-overlay-color: black;
   --cta-color: crimson;
   --text-color: white;
+  --text-color-2: black;
   --text-heading-section-color: black;
   --card-gradient-color1: #29323c;
   --card-gradient-color2: #485563;
@@ -62,6 +63,25 @@ p {
 
 .section-title span {
   color: var(--cta-color);
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid var(--cta-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease;
+  transition-property: background-color, color;
+}
+
+.cta:hover {
+  color: var(--text-color);
+  background-color: var(--cta-color);
 }
 
 /* hero section */
@@ -150,7 +170,7 @@ p {
   transition-property: background-color, color;
 }
 
-#hero .cta:hover {
+.cta:hover {
   color: var(--text-color);
   background-color: var(--cta-color);
 }
@@ -309,6 +329,82 @@ p {
 
 #projects .project-img img {
   transition: 0.5s ease transform;
+}
+
+/* about section */
+#about .about {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#about .about .left-column {
+  width: 250px;
+  height: auto;
+}
+
+#about .about .left-column .about-img {
+  position: relative;
+  border: 7px solid var(--text-color);
+  height: 100%;
+  width: 100%;
+  left: 16px;
+}
+
+#about .about .left-column .about-img::after {
+  content: '';
+  position: absolute;
+  left: -33px;
+  top: 19px;
+  height: 98%;
+  width: 98%;
+  border: 7px solid var(--cta-color);
+  z-index: -1;
+}
+
+#about .about .right-column {
+  width: 100%;
+}
+
+#about .about .right-column h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+#about .about .right-column p {
+  color: var(--text-color-2);
+}
+
+#about .about .right-column .cta {
+  color: var(--cta-color);
+  margin-bottom: 50px;
+}
+
+#about .about .right-column .cta:hover {
+  color: var(--text-color);
+}
+
+/* contact section */
+#contact .contact {
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#contact .contact-items {
+  width: 100%;
+}
+
+#contact .contact-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px;
 }
 
 /* media queries */
