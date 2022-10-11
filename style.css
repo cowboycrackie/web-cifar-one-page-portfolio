@@ -585,6 +585,13 @@ p {
   }
 }
 
+@media only screen and (min-width:1200px) {
+  #services .services .services-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
+}
+
 /* keyframes */
 @keyframes text_reveal_box {
   50% {
