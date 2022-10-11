@@ -158,7 +158,7 @@ p {
 
 .icon {
   width: 100px;
-  max-width: 100px;
+  max-width: 50px;
   margin-bottom: 20px;
   height: auto;
 }
@@ -453,7 +453,7 @@ p {
 
 #footer .footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 20px 0;
   text-align: center;
   width: 70%;
@@ -495,6 +495,93 @@ p {
 
   #footer .footer h2 {
     font-size: 1.2rem;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #services .services-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    flex-direction: row;
+  }
+
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .recent-projects .project-info, #projects .recent-projects .project-img {
+    height: 100%;
+    width: 50%;
+  }
+
+  #about .about {
+    flex-direction: row;
+  }
+
+  #about .about .left-column {
+    width: 400px;
+    height: 300px;
+    padding-left: 60px; 
+  }
+
+  #about .about .left-column .about-img::after{
+    left: -45px;
+    top: 34px;
+    height: 98%; 
+    width: 98%;
+    border: 10px solid var(--cta-color);
+  }
+
+  #about .about .right-column {
+    text-align: left;
+    padding: 30px;
+  }
+
+  #about .about .right-column .cta{
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+
+  #about .about .right-column h1 {
+    text-align: left;
+  }
+
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+
+  #contact .contact .contact-top {
+    padding: 0;
+  }
+
+  #contact .contact .contact-items {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+  }
+
+  #contact .contact .contact-items .contact-item {
+    margin: 20px;
+  }
+
+  #contact .contact-info p {
+    font-size: 0.8rem;
   }
 }
 
