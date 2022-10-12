@@ -24,6 +24,7 @@
 html {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -321,6 +322,7 @@ p {
 
 #services .services-top {
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 #services .services-top p {
